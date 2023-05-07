@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricbuzz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #grad1 
+        {
+            height: 2150px;
+        }
+
+        .button 
+        {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .button1 {border-radius: 20px;}
+
+        .vl 
+        {
+            border-left: 2px solid green;
+            height: auto;
+            position: static;
+            left: auto;
+            margin-left: 3;
+            top: auto;
+        }
+        .v2 
+        {
+            border-left: 2px solid green;
+            height: auto;
+            position: static;
+            left: auto;
+            margin-left: 3;
+            top: auto;
+        }
+        .v3 
+        {
+            border-left: 2px solid green;
+            height: auto;
+            position: static;
+            left: auto;
+            margin-left: 3;
+            top: auto;
+        }
+        
+        body {font-family: Arial, Helvetica, sans-serif;}
+        .grad2 
+        {
+            list-style-type: none;
+            margin: 15px;
+            padding: 0;
+            overflow: hidden;
+            background-image: linear-gradient(to right, #093028,#237a57);
+        }
+
+        .grad2 a 
+        {
+            float: left;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .grad2 a:hover 
+        {
+            background-color: grey;
+        }
+
+        .active
+        {
+            background-color:black;
+        }
+
+        @media screen and (max-width: 500px) 
+        {
+        .grad2 a 
+        {
+            float: none;
+            display: block;
+        }
+        }
+
+        body {font-family: Arial, Helvetica, sans-serif;}
+        .grad3 
+        {
+            list-style-type: none;
+            margin: 15px;
+            padding: 0;
+            overflow: hidden;
+            background-color:rgb(46, 45, 45);
+        }
+
+        .grad3 a 
+        {
+            float: left;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .grad3 a:hover 
+        {
+            background-color: grey;
+        }
+
+        .active
+        {
+            background-color:black;
+        }
+
+        @media screen and (max-width: 500px) 
+        {
+        .grad3 a 
+        {
+            float: none;
+            display: block;
+        }
+        }
+
+        body {font-family: Arial, Helvetica, sans-serif;}
+        .grad4
+        {
+            list-style-type: none;
+            margin: 15px;
+            padding: 0;
+            overflow: hidden;
+            background-image: linear-gradient(to right,#ece9e6,#ffffff);
+        }
+
+        .grad4 a 
+        {
+            float: left;
+            padding: 15px;
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .grad5
+        {
+            list-style-type: none;
+            margin: 15px;
+            padding: 0;
+            overflow: hidden;
+            background-image: linear-gradient(to right,#ece9e6,#ffffff);
+            width: auto;
+        }
+
+        .grad5 a 
+        {
+            float: left;
+            padding: 15px;
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id=grad1 style="border:5px solid black;">
+        
+        <div class="grad2" style="padding-right: 15px;">
+            <a href="http://www.cricbuzz.com "><img src="{{url_for('static', filename='cricbuzz.jpg')}}" height="50px" width="150px"></img></a><br>
+            <a href="#"><b><i>Live Scores</i></b></a>
+            <a href="#"><b><i>Schedule</i></b></a>
+            <a href="#"><b><i>Archives</i></b></a>
+            <a href="#"><b><i>News</i></b></a>
+            <a href="#"><b><i>Series</i></b></a>
+            <a href="#"><b><i>Teams</i></b></a>
+            <a href="#"><b><i>Videos</i></b></a>
+            <a href="#"><b><i>Rankings</i></b></a>
+            <a href="#"><b><i>More</i></b></a>
+            <a class="active" href="http://www.cricbuzz.com"><b><i>Cricbuzz Plus</i></b></a>
+            <a style="float:right" href="#"><i class="fa fa-fw fa-user"></i></a>
+            <a style="float:right" href="#"><i class="fa fa-fw fa-search"></i></a>
+        </div>
+
+        <div class="grad3" style="padding-right: 15px;">
+            <a class="active" href="#"><b><i>MATCHES</i></b></a>
+            <a href="#"><b><i>CSK vs DC - CSK Won</i></b></a>
+            <a href="#"><b><i>RCB vs KKR - Preview</i></b></a>
+            <a href="#"><b><i>AUSW vs INDW - AUSW Won</i></b></a>
+            <a href="#"><b><i>ZIMW vs IREW - Preview</i></b></a>
+            <a href="#"><b><i>RSAU vs DOLPHINS- DOL Won</i></b></a>
+            <a style="float:right" href="#"><b><i>ALL</i></b></a>
+        </div>
+
+        <div class="grad4" style="padding-left: 15px;">
+            <a style="color: green;" href="#"><b><h2>FEATURED MATCHES</h2></b></a><br><br><br><br><br>
+            <a href="#"><b><i>DC   172-5(20)<br><br> CSK   173-6(19.4)<br><br>Chennai Super Kings won by 4 wkts</i></b></a>
+            <a class="vl" href="#"><b><i>Royal Challengers Bangalore<br><br> Kolkata Knight Riders<br><br>Monday, 11 Oct, 07:30 PM</i></b></a>
+            <a class="v2" href="#"><b><i>AUSW   149-5(20)<br><br>INDW   135-6(20)<br><br>Australia Women won by 14 runs</i></b></a>
+            <a class="v3" href="#"><b><i>Zimbabwe Women<br><br> Ireland Women<br><br>Monday, 11 Oct, 01:00 PM</i></b></a>
+            <div>
+                <a href="http://www.cricbuzz.com"><button class="button button1"> >> </button></a>
+            </div>
+        </div>
+
+        <div class="grad5" style="padding-left: 15px;">
+            <a style="color: black;" href="http://www.cricbuzz.com"> <font size=5><b>IPL 2021</b></font size></a>
+            <a href="#"><b><i>Home</i></b></a>
+            <a href="#"><b><i>Schedule</i></b></a>
+            <a href="#"><b><i>Points Table</i></b></a>
+            <a href="#"><b><i>News</i></b></a>
+            <a href="#"><b><i>Videos</i></b></a>
+            <a href="#"><b><i>Squard</i></b></a>
+            <a href="#"><b><i>Wicket Zone</i></b></a>
+            <a href="#"><b><i>Boundary Tracker</i></b></a>
+            <a href="#"><b><i>News Digest</i></b></a>
+        </div>
+
+        <div class="grad5" style="float: left;padding-right: 15px;">
+            <a href="http://www.cricbuzz.com">
+            <div class="grad5"><p><i><b>
+                If I play, I'll be listed at<br>
+                number 3 - Mitchell Marsh<br></b>
+                <ab style="color: rgb(68, 66, 66);">2h ago</ab>
+            </i></p></div>
+
+            <div class="grad5"><p><i><b>
+                Big business houses show<br> 
+                interest in new IPL teams<br></b>
+                <ab style="color: rgb(68, 66, 66);">11h ago</ab>
+            </i></p></div>
+
+            <div class="grad5">
+                <p><i><b>
+                    Achieved fast bowling<br>
+                    goals that we set after UK<br>
+                    tour - Ramesh Powar<br></b>
+                    <ab style="color: rgb(68, 66, 66);">14h ago</ab>
+                </i></p>
+            </div>
+
+            <div class="grad5">
+                <p><i><b>
+                    Nabi named captain as<br>
+                    Afghanistan alter T20<br> 
+                    World Cup side<br></b>
+                    <ab style="color: rgb(68, 66, 66);">15h ago</ab>
+                </i></p>
+            </div>
+
+            <div class="grad5">
+                <p><i><b>
+                    England will be learning<br>
+                    from India's game plans in<br> 
+                    Australia: Silverwood<br></b>
+                    <ab style="color: rgb(68, 66, 66);">17h ago</ab>
+                </i></p>
+            </div>
+
+            <div class="grad5">
+                <p><i><b>
+                    Lahiru Kumara, Akila<br>
+                    Dananjaya named in SL's<br>
+                    final 15 for World Cup<br></b>
+                    <ab style="color: rgb(68, 66, 66);">18h ago</ab></h5>
+                </i></p>
+            </div>
+
+            <div class="grad5">
+                <p><i><b>
+                    England name full -<br>
+                    strength squad of<br>
+                    available players for<br>
+                    the Ashes<br></b>
+                    <ab style="color: rgb(68, 66, 66);">19h ago</ab>
+                </i></p>
+            </div>
+
+            <div class="grad5">
+                <p><i><b>
+                    Wade aims to nail down middle<br>
+                    order spot<br></b>
+                    <ab style="color: rgb(68, 66, 66);">22h ago</ab>
+                </i></p>
+            </div>
+
+            <div class="grad5">
+                <p><i><b>
+                    Umran Malik to join Indian<br>
+                    team as net bowler for T20 WC;<br>
+                    Ashish Kaushik quits NCA<br></b>
+                    <ab style="color: rgb(68, 66, 66);">1 Day ago</ab>
+                </i></p>
+            </div></a>
+
+            <div>
+                <a class="grad5" href="http://www.cricbuzz.com "><b><i>More News...</i></b></a>
+            </div>
+
+        </div><br><br>
+
+        <div style="float: left;padding-right: 30px;">
+            <ab style="color: rgb(68, 66, 66);"><font size=6>DC VS CSK, QUALIFIER 1</font size></ab><br><br><br><br><br>
+            <img src="{{url_for('static', filename='chennai.jpg')}}" height="300px" width="500px" align="right"></img>
+        </div><br>
+        <div>
+            <p><b><h1>Uthappa, Gaikwad send CSK flying into yet another final</h1></b></p>
+            <ab style="color: rgb(68, 66, 66);">MS Dhoni's side pulled off the highest run-chase in Dubai this season</ab><br><br><br>
+            <div class="grad4" style="padding-left: 15px;">
+                <a href="http://www.cricbuzz.com"><b><i>DC   172-5(20)<br><br> CSK   173-6(19.4)<br><br><ab style="color: blue;"> Chennai Super Kings won by 4 wkts</ab></i></b></a>
+            </div>
+            <div style="float: right;padding-right: 75px;" >
+                <p><b><h3><ab style="color: blue;">As it happened</ab></h3>
+                <ab style="color: red;"><h5>Report / CSK pip DC in last-over thriller to storm<br> into IPL 2021 final<br><br>
+                'I was pretty sure Dhoni would come ahead of <br>Jadeja' - Ponting<br><br>The IPL Pulse</h5></ab></b></p>
+            </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div style="float: left;padding-right: 30px;">
+            <ab style="color: rgb(68, 66, 66);"><font size=6>PREVIEW - RCB VS KKR,<br> ELIMINATOR</font size></ab><br><br><br>
+            <img src="{{url_for('static', filename='rcb.jpg')}}" height="300px" width="500px" align="right"></img>
+        </div><br>
+        <div>
+            <p><b><h1>Resurgent KKR look to<br> rain on RCB's parade</h1></b></p>
+            <ab style="color: rgb(68, 66, 66);">The Bangalore side will be hoping Kohli's RCB captaincy stint<br> continues for a little longer</ab><br><br>
+            <div class="grad4" style="padding-left: 25px;">
+                <a href="http://www.cricbuzz.com"><b><i>RCB   0-0(0)<br><br> KKR   0-0(0)<br><br><ab style="color: blue;"> Starts From Monday, 11 Oct, 07:30 PM</ab></i></b></a>
+            </div>
+            <div style="float: right;padding-right: 45px;">
+                <p><b><h4><ab style="color: blue;">'Redefined' KS Bharat proves crucial cog in<br> RCB's batting With middle-over aggression,<br> KKR master Sharjah tricks</ab></h4>
+            </div>
+        </div><br><br><br><br><br><br><br>
+
+        <div style="float: left;padding-left: 325px;">
+            <ab style="color: rgb(68, 66, 66);"><font size=6>ICC T20 WORLD CUP 2021</font size></ab><br><br><br><br>
+            <div style="padding-right: 20px;">
+                <img src="{{url_for('static', filename='umran.jpg')}}" height="300px" width="500px" align="right"></img>
+            </div style="float: left;padding-right: 15px;">
+        </div><br>
+        <div>
+            <p><b><h1>Umran Malik to join Indian team as net bowler for T20 World Cup</h1></b></p>
+            <ab style="color: rgb(68, 66, 66);">The SRH pacer has been asked by the BCCI to stay back in the UAE</ab><br><br>
+            <div class="grad5" style="float: right;padding-right: 50px;">
+                <a href="http://www.cricbuzz.com">
+                <p><b><h4>Malik, Fakhar, Sarfaraz, Haider<br> included in Pakistan's 15 for T20 WC<br><br>
+                Nabi named captain as Afghanistan<br> alter T20 World Cup side<br><br>
+                Lahiru Kumara, Akila Dananjaya named<br> in SL's final 15 for World Cup<br><br>
+                CupDigest / Oman get approval for<br> practice game vs Bangladesh</h4></b></p></a>
+            </div>
+        </div>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
