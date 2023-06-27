@@ -17,7 +17,7 @@ def login():
         passwd = request.form['p']
         cnf_pass = request.form['cp']
         if passwd == cnf_pass:
-            db = sql.connect("users.db")
+            db = sql.connect("user.db")
             #db.execute('create table user(sid int primary key not null,Name varchar(100) not null, email varchar(25) not null, Password varchar(30) not null);')
             db.execute(f'''insert into user values({sid},'{name}','{email}','{passwd}')''')
             db.commit()
